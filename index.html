@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f7fb">
+    <title>Wi-Fi Speed Check</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+
+    
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M4.5 11.5a17.5 17.5 0 0 1 23 0M8.5 16a11.5 11.5 0 0 1 15 0m-11 4.5a5 5 0 0 1 7 0M16 25h.01" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <p class="eyebrow">NETWORK TOOLS</p>
+          <h1>Wi-Fi Speed Check</h1>
+          <p class="subtitle">A quick look at how your connection is doing.</p>
+        </div>
+      </header>
+
+      <section class="results" aria-label="Speed test results">
+        <article class="metric-card download-card">
+          <div class="metric-heading">
+            <span class="metric-icon" aria-hidden="true">↓</span>
+            <span>DOWNLOAD</span>
+          </div>
+          <div class="metric-reading">
+            <span class="metric-value" id="download">--</span>
+            <span class="metric-unit">Mbps</span>
+          </div>
+          <p class="metric-caption">How quickly you receive data</p>
+        </article>
+
+        <article class="metric-card upload-card">
+          <div class="metric-heading">
+            <span class="metric-icon" aria-hidden="true">↑</span>
+            <span>UPLOAD</span>
+          </div>
+          <div class="metric-reading">
+            <span class="metric-value" id="upload">--</span>
+            <span class="metric-unit">Mbps</span>
+          </div>
+          <p class="metric-caption">How quickly you send data</p>
+        </article>
+      </section>
+
+      <section class="details" aria-label="Connection details">
+        <div class="ping-detail">
+          <span class="ping-dot" aria-hidden="true"></span>
+          <span class="detail-label">PING</span>
+          <strong id="ping">--</strong>
+          <span class="detail-unit">ms</span>
+        </div>
+        <span class="detail-divider" aria-hidden="true"></span>
+        <p class="server-note">Measured using a nearby test server</p>
+      </section>
+
+      <button class="test-button" id="test-button" type="button">
+        <span class="button-icon" aria-hidden="true">↗</span>
+        <span id="button-label">Start speed test</span>
+      </button>
+
+      <div class="status-area" aria-live="polite">
+        <span class="status-indicator" id="status-indicator"></span>
+        <span id="status">Ready to test your connection</span>
+      </div>
+
+      <footer>For the most accurate result, pause downloads and streaming during the test.</footer>
+    </main>
+  </body>
+</html>
