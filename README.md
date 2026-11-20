@@ -10,6 +10,13 @@ A small, browser-based internet speed checker powered by Python. Run it locally,
 - Lightweight HTML, CSS, and JavaScript interface
 - Local Python server; the app is not hosted online
 
+
+## Screenshots
+<img width="1637" height="911" alt="screenshot main" src="https://github.com/user-attachments/assets/f05dc8da-a0c7-4760-ab5f-6ca37db3266e" />
+
+<img width="1636" height="911" alt="screenshot 1" src="https://github.com/user-attachments/assets/1ccc7c9f-707a-4917-bcdf-9ff7434b7c34" />
+
+
 ## Requirements
 
 - Python 3
