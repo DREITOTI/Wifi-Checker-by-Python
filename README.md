@@ -2,6 +2,9 @@
 
 A small, browser-based internet speed checker powered by Python. Run it locally, open the page in your browser, and check your download speed, upload speed, and ping.
 
+Wi-Fi Speed Checker measures your download speed, upload speed, and ping using Python’s speedtest-cli. It serves a lightweight web interface locally, so you can run a test from your browser with one click.
+
+
 ## Features
 
 - One-click speed test
